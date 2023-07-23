@@ -5,13 +5,13 @@
 }
 
 body {
-    margin: 60px auto;
-    max-width: 800px;
+    margin:100px 0;
 }
 
-.text-center{
-    text-align: center;
-    margin: 0;
+h1,
+h2,
+h3{
+    margin:0;
 }
 
 h1 {
@@ -28,11 +28,8 @@ h3 {
 }
 
 p {
-    padding: 20px;
-    border-radius: 4px;
     font-size: 18px;
     line-height: 1.5;
-    text-align: center;
 }
 
 .navigation-links {
@@ -43,22 +40,31 @@ p {
 
 .navigation-links a {
     margin: 20px;
+}
+
+.primary-link{
     border-radius: 4px;
-    padding: 20px 15px;
-    text-decoration: none;
-    text-transform: capitalize;
-}
+        padding: 20px 15px;
+        text-decoration: none;
+        text-transform: capitalize;
+        background: var(--primary-color);
+        box-shadow: var(--box-shadow);
+        color: white;
+    }
 
-.contact-link {
-    background: var(--primary-color);
-    box-shadow: var(--box-shadow);
-    color: white;
-}
+    .primary-link:hover{
+        color:white;
+    }
 
-.about-link {
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-}
+        .secondary-link {
+            border-radius: 4px;
+            padding: 20px 15px;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
 
 .homepage-link {
     color: var(--primary-color);
@@ -85,4 +91,26 @@ p {
 
 .email-link:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 48px;
+        line-height: 1.5;
+    }
+
+    h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .project-link {
+        display: block;
+        text-align: center;
+        margin: 0 20px;
+    }
 }
